@@ -15,8 +15,8 @@
  <div class="login">
 	<h1>Predict Salary Analysis</h1>
 
-     <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict')}}"method="post">
+     <!-- Main Input For Receiving Query to our ML {{ url_for('predict')}}-->
+    <form action="/predict"method="post">
     	<input type="text" name="experience" placeholder="Experience" required="required" />
         <input type="text" name="test_score" placeholder="Test Score" required="required" />
 		<input type="text" name="interview_score" placeholder="Interview Score" required="required" />
